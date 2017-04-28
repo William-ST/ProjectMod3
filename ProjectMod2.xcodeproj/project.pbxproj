@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FE7ED7A85B5EB4FCC398FB4 /* Pods_ProjectMod2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9245757FB488945DB6F14189 /* Pods_ProjectMod2.framework */; };
+		B50C5F7D1EB25CFD005C383B /* CDMWebSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C5F7C1EB25CFD005C383B /* CDMWebSender.swift */; };
+		B50C5F801EB25D56005C383B /* CDMWebResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C5F7F1EB25D56005C383B /* CDMWebResponse.swift */; };
+		B50C5F821EB25F8B005C383B /* CDMWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C5F811EB25F8B005C383B /* CDMWebModel.swift */; };
+		B50C5F841EB26210005C383B /* SigninBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C5F831EB26210005C383B /* SigninBody.swift */; };
+		B50C5F861EB27936005C383B /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C5F851EB27936005C383B /* UserEntity.swift */; };
+		B50C5F881EB2798A005C383B /* CDMWebTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C5F871EB2798A005C383B /* CDMWebTranslator.swift */; };
+		B50C5F8A1EB27DF8005C383B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C5F891EB27DF8005C383B /* BaseViewController.swift */; };
+		B50C5F8F1EB29889005C383B /* ProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C5F8E1EB29889005C383B /* ProductEntity.swift */; };
+		B50C5F911EB29978005C383B /* SalePointEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C5F901EB29978005C383B /* SalePointEntity.swift */; };
+		B50C5F931EB2ADFB005C383B /* MapperProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C5F921EB2ADFB005C383B /* MapperProductEntity.swift */; };
+		B51C727D1EB2B54A00148A8F /* SalesPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51C727C1EB2B54A00148A8F /* SalesPointViewController.swift */; };
+		B51C727F1EB2B8F500148A8F /* Marcador.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51C727E1EB2B8F500148A8F /* Marcador.swift */; };
+		B51C72811EB2C1E700148A8F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51C72801EB2C1E700148A8F /* ProfileViewController.swift */; };
+		B51C72831EB2E26E00148A8F /* RequestBuyBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51C72821EB2E26E00148A8F /* RequestBuyBody.swift */; };
 		B53254A31E85DE7D004E1CCE /* ShoppingCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53254A21E85DE7D004E1CCE /* ShoppingCarViewController.swift */; };
 		B5382E581E80DB4E00AAD087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5382E571E80DB4E00AAD087 /* AppDelegate.swift */; };
 		B5382E5D1E80DB4E00AAD087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5382E5B1E80DB4E00AAD087 /* Main.storyboard */; };
@@ -18,6 +33,7 @@
 		B5382E8A1E80E70B00AAD087 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5382E891E80E70B00AAD087 /* Product.swift */; };
 		B5382E8E1E80F0ED00AAD087 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5382E8D1E80F0ED00AAD087 /* ProductCollectionViewCell.swift */; };
 		B5905A041E87381A00EB653B /* ShoppingCarViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5905A031E87381A00EB653B /* ShoppingCarViewCellTableViewCell.swift */; };
+		B5B25B641EB1D39500CCA950 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B25B631EB1D39500CCA950 /* SigninViewController.swift */; };
 		FB7959D71E820D66001B3BE4 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7959D61E820D66001B3BE4 /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +55,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52579002C2EC2F1D07CC2593 /* Pods-ProjectMod2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMod2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectMod2/Pods-ProjectMod2.debug.xcconfig"; sourceTree = "<group>"; };
+		87C6325C149A52059542DF18 /* Pods-ProjectMod2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMod2.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectMod2/Pods-ProjectMod2.release.xcconfig"; sourceTree = "<group>"; };
+		9245757FB488945DB6F14189 /* Pods_ProjectMod2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectMod2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50C5F7C1EB25CFD005C383B /* CDMWebSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebSender.swift; sourceTree = "<group>"; };
+		B50C5F7F1EB25D56005C383B /* CDMWebResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebResponse.swift; sourceTree = "<group>"; };
+		B50C5F811EB25F8B005C383B /* CDMWebModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebModel.swift; sourceTree = "<group>"; };
+		B50C5F831EB26210005C383B /* SigninBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninBody.swift; sourceTree = "<group>"; };
+		B50C5F851EB27936005C383B /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		B50C5F871EB2798A005C383B /* CDMWebTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDMWebTranslator.swift; sourceTree = "<group>"; };
+		B50C5F891EB27DF8005C383B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B50C5F8B1EB27F27005C383B /* ProjectMod2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProjectMod2-Bridging-Header.h"; sourceTree = "<group>"; };
+		B50C5F8E1EB29889005C383B /* ProductEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductEntity.swift; sourceTree = "<group>"; };
+		B50C5F901EB29978005C383B /* SalePointEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalePointEntity.swift; sourceTree = "<group>"; };
+		B50C5F921EB2ADFB005C383B /* MapperProductEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapperProductEntity.swift; sourceTree = "<group>"; };
+		B51C727C1EB2B54A00148A8F /* SalesPointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesPointViewController.swift; sourceTree = "<group>"; };
+		B51C727E1EB2B8F500148A8F /* Marcador.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Marcador.swift; sourceTree = "<group>"; };
+		B51C72801EB2C1E700148A8F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B51C72821EB2E26E00148A8F /* RequestBuyBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuyBody.swift; sourceTree = "<group>"; };
 		B53254A21E85DE7D004E1CCE /* ShoppingCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCarViewController.swift; sourceTree = "<group>"; };
 		B5382E541E80DB4E00AAD087 /* ProjectMod2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectMod2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5382E571E80DB4E00AAD087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +90,7 @@
 		B5382E891E80E70B00AAD087 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		B5382E8D1E80F0ED00AAD087 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		B5905A031E87381A00EB653B /* ShoppingCarViewCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCarViewCellTableViewCell.swift; sourceTree = "<group>"; };
+		B5B25B631EB1D39500CCA950 /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		FB7959D61E820D66001B3BE4 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE7ED7A85B5EB4FCC398FB4 /* Pods_ProjectMod2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +120,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DC658E9E3B0305C13B51D1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9245757FB488945DB6F14189 /* Pods_ProjectMod2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79309252DAC3BACF9EA6A967 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52579002C2EC2F1D07CC2593 /* Pods-ProjectMod2.debug.xcconfig */,
+				87C6325C149A52059542DF18 /* Pods-ProjectMod2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B50C5F771EB259FB005C383B /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B50C5F781EB25A06005C383B /* repository */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		B50C5F781EB25A06005C383B /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				B50C5F7A1EB25A1C005C383B /* entity */,
+				B50C5F791EB25A0D005C383B /* network */,
+				B50C5F7C1EB25CFD005C383B /* CDMWebSender.swift */,
+				B50C5F7F1EB25D56005C383B /* CDMWebResponse.swift */,
+				B50C5F811EB25F8B005C383B /* CDMWebModel.swift */,
+				B50C5F871EB2798A005C383B /* CDMWebTranslator.swift */,
+			);
+			name = repository;
+			sourceTree = "<group>";
+		};
+		B50C5F791EB25A0D005C383B /* network */ = {
+			isa = PBXGroup;
+			children = (
+				B50C5F7B1EB25A27005C383B /* body */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		B50C5F7A1EB25A1C005C383B /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				B50C5F851EB27936005C383B /* UserEntity.swift */,
+				B50C5F8E1EB29889005C383B /* ProductEntity.swift */,
+				B50C5F901EB29978005C383B /* SalePointEntity.swift */,
+			);
+			name = entity;
+			sourceTree = "<group>";
+		};
+		B50C5F7B1EB25A27005C383B /* body */ = {
+			isa = PBXGroup;
+			children = (
+				B50C5F831EB26210005C383B /* SigninBody.swift */,
+				B51C72821EB2E26E00148A8F /* RequestBuyBody.swift */,
+			);
+			name = body;
+			sourceTree = "<group>";
+		};
 		B5382E4B1E80DB4E00AAD087 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +192,8 @@
 				B5382E6B1E80DB4E00AAD087 /* ProjectMod2Tests */,
 				B5382E761E80DB4E00AAD087 /* ProjectMod2UITests */,
 				B5382E551E80DB4E00AAD087 /* Products */,
+				79309252DAC3BACF9EA6A967 /* Pods */,
+				3DC658E9E3B0305C13B51D1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +210,7 @@
 		B5382E561E80DB4E00AAD087 /* ProjectMod2 */ = {
 			isa = PBXGroup;
 			children = (
+				B50C5F771EB259FB005C383B /* data */,
 				B5382E8C1E80F0C100AAD087 /* adapter */,
 				B5382E861E80DDF600AAD087 /* model */,
 				B5382E851E80DDE700AAD087 /* view */,
@@ -115,6 +219,7 @@
 				B5382E5E1E80DB4E00AAD087 /* Assets.xcassets */,
 				B5382E601E80DB4E00AAD087 /* LaunchScreen.storyboard */,
 				B5382E631E80DB4E00AAD087 /* Info.plist */,
+				B50C5F8B1EB27F27005C383B /* ProjectMod2-Bridging-Header.h */,
 			);
 			path = ProjectMod2;
 			sourceTree = "<group>";
@@ -143,6 +248,10 @@
 				B5382E871E80DE5B00AAD087 /* ProductCollectionViewController.swift */,
 				FB7959D61E820D66001B3BE4 /* ProductDetailViewController.swift */,
 				B53254A21E85DE7D004E1CCE /* ShoppingCarViewController.swift */,
+				B5B25B631EB1D39500CCA950 /* SigninViewController.swift */,
+				B50C5F891EB27DF8005C383B /* BaseViewController.swift */,
+				B51C727C1EB2B54A00148A8F /* SalesPointViewController.swift */,
+				B51C72801EB2C1E700148A8F /* ProfileViewController.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -151,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				B5382E891E80E70B00AAD087 /* Product.swift */,
+				B50C5F921EB2ADFB005C383B /* MapperProductEntity.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -160,6 +270,7 @@
 			children = (
 				B5382E8D1E80F0ED00AAD087 /* ProductCollectionViewCell.swift */,
 				B5905A031E87381A00EB653B /* ShoppingCarViewCellTableViewCell.swift */,
+				B51C727E1EB2B8F500148A8F /* Marcador.swift */,
 			);
 			name = adapter;
 			sourceTree = "<group>";
@@ -171,9 +282,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5382E7C1E80DB4E00AAD087 /* Build configuration list for PBXNativeTarget "ProjectMod2" */;
 			buildPhases = (
+				979800381CD818CFCF13B470 /* [CP] Check Pods Manifest.lock */,
 				B5382E501E80DB4E00AAD087 /* Sources */,
 				B5382E511E80DB4E00AAD087 /* Frameworks */,
 				B5382E521E80DB4E00AAD087 /* Resources */,
+				494C41BB55FECEFCA729BD9A /* [CP] Embed Pods Frameworks */,
+				D6E5EC43A7078277B8365718 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +347,7 @@
 					B5382E531E80DB4E00AAD087 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Y4G2QFLKB7;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					B5382E671E80DB4E00AAD087 = {
@@ -296,18 +411,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		494C41BB55FECEFCA729BD9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectMod2/Pods-ProjectMod2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		979800381CD818CFCF13B470 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D6E5EC43A7078277B8365718 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectMod2/Pods-ProjectMod2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5382E501E80DB4E00AAD087 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B5382E881E80DE5B00AAD087 /* ProductCollectionViewController.swift in Sources */,
+				B50C5F7D1EB25CFD005C383B /* CDMWebSender.swift in Sources */,
 				B53254A31E85DE7D004E1CCE /* ShoppingCarViewController.swift in Sources */,
+				B50C5F881EB2798A005C383B /* CDMWebTranslator.swift in Sources */,
 				B5905A041E87381A00EB653B /* ShoppingCarViewCellTableViewCell.swift in Sources */,
+				B51C727D1EB2B54A00148A8F /* SalesPointViewController.swift in Sources */,
+				B50C5F8A1EB27DF8005C383B /* BaseViewController.swift in Sources */,
 				B5382E581E80DB4E00AAD087 /* AppDelegate.swift in Sources */,
+				B50C5F841EB26210005C383B /* SigninBody.swift in Sources */,
+				B5B25B641EB1D39500CCA950 /* SigninViewController.swift in Sources */,
+				B50C5F801EB25D56005C383B /* CDMWebResponse.swift in Sources */,
+				B50C5F911EB29978005C383B /* SalePointEntity.swift in Sources */,
+				B50C5F861EB27936005C383B /* UserEntity.swift in Sources */,
 				FB7959D71E820D66001B3BE4 /* ProductDetailViewController.swift in Sources */,
+				B51C727F1EB2B8F500148A8F /* Marcador.swift in Sources */,
+				B50C5F8F1EB29889005C383B /* ProductEntity.swift in Sources */,
 				B5382E8E1E80F0ED00AAD087 /* ProductCollectionViewCell.swift in Sources */,
+				B50C5F931EB2ADFB005C383B /* MapperProductEntity.swift in Sources */,
+				B51C72831EB2E26E00148A8F /* RequestBuyBody.swift in Sources */,
+				B51C72811EB2C1E700148A8F /* ProfileViewController.swift in Sources */,
 				B5382E8A1E80E70B00AAD087 /* Product.swift in Sources */,
+				B50C5F821EB25F8B005C383B /* CDMWebModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,8 +635,10 @@
 		};
 		B5382E7D1E80DB4E00AAD087 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52579002C2EC2F1D07CC2593 /* Pods-ProjectMod2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Y4G2QFLKB7;
 				INFOPLIST_FILE = ProjectMod2/Info.plist;
@@ -466,14 +646,18 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = virtualink.pe.ProjectMod2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProjectMod2/ProjectMod2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		B5382E7E1E80DB4E00AAD087 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87C6325C149A52059542DF18 /* Pods-ProjectMod2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Y4G2QFLKB7;
 				INFOPLIST_FILE = ProjectMod2/Info.plist;
@@ -481,6 +665,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = virtualink.pe.ProjectMod2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ProjectMod2/ProjectMod2-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

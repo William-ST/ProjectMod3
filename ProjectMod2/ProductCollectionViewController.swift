@@ -10,7 +10,7 @@ import UIKit
 
 var shoppingCar = Array<Product>()
 
-class ProductCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate, UIGestureRecognizerDelegate {
+class ProductCollectionViewController: BaseViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -26,31 +26,27 @@ class ProductCollectionViewController: UIViewController, UICollectionViewDelegat
         collectionView.dataSource = self
         searchBar.delegate = self
         
-        var names = Array<String>()
-        names.append("Samsung 5")
-        names.append("iPhone 5C")
-        names.append("iPhone 6")
-        names.append("iPhone 6S")
-        names.append("iPhone 7")
-        names.append("iPhone 7S")
-        names.append("Tablet XP")
-        names.append("Laptop Pavilion")
-        names.append("Mackbook Pro")
-        names.append("Mackbook Pro Retina")
-        names.append("iPod 3")
-        names.append("iPod 5")
+        loadProducts()
         
-        for i in 0..<12 {
-            let product = Product()
-            print("i: \(i)")
-            product.id = i+1
-            product.name = names[i]
-            product.amount = 20.00 * Double(i)
-            product.image = UIImage(named: "iphone\(i)")
-            product.detail = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut elit ac risus vulputate tincidunt. Nam accumsan, augue quis auctor consectetur, metus magna consectetur lectus, nec auctor arcu orci vitae arcu. Morbi at fringilla eros. In sollicitudin eros ut dui venenatis iaculis. In eu augue est. Ut in efficitur orci. Suspendisse potenti. Cras ac eros id eros dignissim posuere."
-            productCollection.append(product)
+    }
+    
+    func loadProducts() {
+        self.view.endEditing(true)
+        showLoading(message: "Cargando productos")
+        CDMWebModel.getListProducts(conCompletionCorrecto: { (listProductEntity) in
+            self.hideLoading()
+            print("count: \(listProductEntity.count)")
+            if listProductEntity == nil {
+                self.showError()
+            } else {
+                self.productCollection = MapperProductEntity.transform(productEntityList: listProductEntity)
+                self.collectionView.reloadData()
+                print("LOAD PRODUCTS() OK!")
+            }
+        }) { (message) in
+            self.hideLoading()
+            self.showError(message: message)
         }
-        
     }
     
     func itemLongSelected(sender:UILongPressGestureRecognizer) {
@@ -132,7 +128,15 @@ class ProductCollectionViewController: UIViewController, UICollectionViewDelegat
         
         cell.labelName.text = product.name
         cell.labelAmount.text = "S/. \(product.amount!)"
-        cell.imageProduct.image = product.image
+        
+        let productImageUrl = product.image.count > 0 ? product.image[0] : ""
+        
+        if let checkedUrl = URL(string: productImageUrl) {
+            cell.imageProduct.contentMode = .scaleAspectFit
+            downloadImage(url: checkedUrl, imageViewPhoto: cell.imageProduct)
+        }
+        
+        //cell.imageProduct.image = product.image
         
         cell.tag = indexPath.row
         
@@ -171,6 +175,22 @@ class ProductCollectionViewController: UIViewController, UICollectionViewDelegat
             let productDetailViewController = segue.destination as! ProductDetailViewController
             productDetailViewController.currentProduct = selectProduct
         }
+    }
+    
+    func downloadImage(url: URL, imageViewPhoto: UIImageView) {
+        getDataFromUrl(url: url) { (data, response, error)  in
+            guard let data = data, error == nil else { return }
+            DispatchQueue.main.async() { () -> Void in
+                imageViewPhoto.image = UIImage(data: data)
+            }
+        }
+    }
+    
+    func getDataFromUrl(url: URL, completion: @escaping (_ data: Data?, _  response: URLResponse?, _ error: Error?) -> Void) {
+        URLSession.shared.dataTask(with: url) {
+            (data, response, error) in
+            completion(data, response, error)
+            }.resume()
     }
     
 }

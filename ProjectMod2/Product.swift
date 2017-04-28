@@ -10,8 +10,8 @@ import UIKit
 
 class Product: NSObject {
     
-    var id:Int!
-    var image:UIImage!
+    var id:String!
+    var image:Array<String>!
     var name:String!
     var detail:String!
     var amount:Double!

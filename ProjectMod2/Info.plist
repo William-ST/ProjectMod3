@@ -2,6 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Necesario para realizar la venta</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Necesario para realizar la venta</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Seleccionar foto para perfil</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Tomar foto para perfil</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

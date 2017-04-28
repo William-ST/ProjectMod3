@@ -31,14 +31,17 @@ class ProductDetailViewController: UIViewController {
 
         self.navigationItem.backBarButtonItem?.title = "Tienda Virtual"
         
-        print("Precio: \(currentProduct.amount)")
-        imageView.image = currentProduct.image
         lblNAme.text = currentProduct.name
         lblAount.text = "S/. \(currentProduct.amount!)"
         lblDescription.text = currentProduct.detail
         
+        let productImageUrl = currentProduct.image.count > 0 ? currentProduct.image[0] : ""
         
-        // Do any additional setup after loading the view.
+        if let checkedUrl = URL(string: productImageUrl) {
+            imageView.contentMode = .scaleAspectFit
+            downloadImage(url: checkedUrl, imageViewPhoto: imageView)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -81,5 +84,21 @@ class ProductDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func downloadImage(url: URL, imageViewPhoto: UIImageView) {
+        getDataFromUrl(url: url) { (data, response, error)  in
+            guard let data = data, error == nil else { return }
+            DispatchQueue.main.async() { () -> Void in
+                imageViewPhoto.image = UIImage(data: data)
+            }
+        }
+    }
+    
+    func getDataFromUrl(url: URL, completion: @escaping (_ data: Data?, _  response: URLResponse?, _ error: Error?) -> Void) {
+        URLSession.shared.dataTask(with: url) {
+            (data, response, error) in
+            completion(data, response, error)
+            }.resume()
+    }
 
 }
